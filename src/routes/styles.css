@@ -1,0 +1,92 @@
+:root {
+  --mdc-typography-font-family: 'Special Elite', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --gh-blur: 0.4
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  height: 100dvh;
+}
+
+.drawer-button {
+  position: absolute;
+  z-index: 1;
+  left: 16px;
+  top: 16px;
+  background: black;
+  border-radius: 50%;
+  color: white;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.app-content {
+  background: white;
+}
+
+@media (min-width: 480px) {
+  canvas {
+    border: 12px solid black;
+    -webkit-box-shadow:
+    0 11px 15px -7px rgba(0,0,0,var(--gh-blur)),
+    0 24px 38px 3px rgba(0,0,0,var(--gh-blur)),
+    0 9px 46px 8px rgba(0,0,0,var(--gh-blur));
+    box-shadow:
+    0 11px 15px -7px rgba(0,0,0,var(--gh-blur)),
+    0 24px 38px 3px rgba(0,0,0,var(--gh-blur)),
+    0 9px 46px 8px rgba(0,0,0,var(--gh-blur));
+    width: 480px;
+    height: 800px;
+  }
+}
+
+@media (max-width: 480px) {
+  body,
+  .app,
+  main {
+    background: black !important;
+  }
+
+  .drawer-button {
+    display: none;
+  }
+
+  canvas {
+    width: 100dvw;
+    height: 100dvh;
+  }
+}
+
+.mdc-circular-progress--indeterminate {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+}
+
+.mdc-drawer,
+.mdc-drawer-scrim {
+  top: 0;
+  height: 100dvh;
+}
+
+.list-item__thumb {
+  height: 123px !important;
+}
+
+.list-item__thumb img {
+  margin-right: 8px;
+}
+
+.main-content {
+  padding: 0 !important;
+}
