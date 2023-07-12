@@ -19,7 +19,7 @@ body {
   position: absolute;
   z-index: 1;
   left: 16px;
-  top: 16px;
+  top: 28px;
   background: black;
   border-radius: 50%;
   color: white;
@@ -48,18 +48,22 @@ body {
     width: 480px;
     height: 800px;
   }
+
+  .drawer-button {
+    top: 16px;
+  }
 }
 
 @media (max-width: 480px) {
   body,
   .app,
   main {
-    background: black !important;
+    background: rgb(25, 25, 28) !important;
   }
 
-  .drawer-button {
+  /* .drawer-button {
     display: none;
-  }
+  } */
 
   canvas {
     width: 100dvw;

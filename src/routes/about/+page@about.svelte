@@ -47,13 +47,13 @@ import './styles.css';
 .text-column {
   line-height: 1.6;
   max-width: 464px;
-  margin: 40px 16px 0;
+  margin: 40px 16px;
   position: relative;
 }
 
 @media (max-width: 480px) {
   .text-column {
-    margin-top: 16px
+    margin-top: 76px
   }
 }
 

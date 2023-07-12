@@ -1,4 +1,5 @@
 <script lang='ts'>
+import './styles.css';
 import { onMount } from 'svelte';
 import { palettes } from '$lib/data/palettes'
 import CircularProgress from '@smui/circular-progress';
